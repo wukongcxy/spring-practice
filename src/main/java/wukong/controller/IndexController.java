@@ -1,7 +1,5 @@
 package wukong.controller;
 
-import wukong.aop.LogTrace;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/index")
 public class IndexController {
 
-    @RequestMapping
-    @LogTrace
+    @RequestMapping()
+    // @LogTrace
     public String index() {
         return "Hello world";
     }
